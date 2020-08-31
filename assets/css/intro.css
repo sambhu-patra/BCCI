@@ -1,0 +1,285 @@
+/* ======================================
+            CSS reset
+====================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* ========================================
+        Container cascading
+======================================== */
+
+html {
+  font-size: 62.5%;
+}
+
+.main { 
+  width: 100%;
+  height: auto;
+  background: #7070f5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+}
+
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 5.9rem;
+  height: 5.9rem;
+  position: absolute;
+  left: 3.0rem;
+}
+
+.logo h2 {
+  font-size: 3vw;
+  color: #fff;
+  position: absolute;
+  left: 12.0rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.4vw;
+  font-family: monospace;
+  color: #fff;
+}
+
+.navbar a:first-child {
+  color: #ff0000;
+}
+
+.navbar hr {
+  height: 4.0rem;
+}
+
+.image {
+  width: 35vw;
+  height: 50vh;
+  position: relative;
+  top: -2.4rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph {
+  width: 65vw;
+  height: 70vh;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  top: 5.5rem;
+} 
+
+p {
+  color: #fff;
+  font-size: 2vw;
+  font-family: 'Dosis', sans-serif;
+}
+
+.headline { 
+  width: 100%;
+  height: 10vh;
+  background: rgb(37, 33, 243);
+}
+
+.headline h1 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 1.5rem;
+  letter-spacing: 4px;
+  font-size: 2vw;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  background: rgb(42, 3, 219);
+}
+
+/* ========================================
+        Media query for mobile device
+======================================== */
+
+@media(max-width:420px) {
+
+html {
+  font-size: 25%;
+}
+
+.paragraph {
+  width: 100vw;
+  height: 70vh;
+  padding-left: 0.3rem;
+  box-sizing: border-box;
+  position: relative;
+  top: 7.5rem;
+} 
+
+.container {
+  display: block;
+  width: 100vw;
+  height: 140vh;
+}
+
+p {
+  color: #fff;
+  font-size: 4.5vw;
+  font-family: 'Dosis', sans-serif;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.image {
+  width: 95vw;
+  height: 50vh;
+  position: relative;
+  top: 1rem;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.headline h1 {
+  position: relative;
+  top: 4.5rem;
+  font-size: 4vw;
+}
+
+}
+
+/* ========================================
+  Media Query for Tablet and ipad
+======================================== */
+
+@media(min-width:421px) and (max-width:780px) {
+
+html {
+font-size: 40%;
+}
+
+.paragraph {
+  width: 100vw;
+  height: auto;
+  padding-left: 2.3rem;
+  box-sizing: border-box;
+} 
+
+p {
+  position: relative;
+  top: 6.0rem;
+  font-size: 2vw;
+}
+
+.image {
+  width: 95vw;
+  height: 50vh;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 7.0rem;
+}
+
+.headline h1 {
+  position: relative;
+  top: 1.5rem;
+  font-size: 4vw;
+}
+
+}
+
+/* ========================================
+Media query for Laptop and Desktop
+======================================== */
+
+@media(min-width:781px){
+
+.headline h1 {
+  position: relative;
+  top: 0.5rem;
+  font-size: 3.5vw;
+}
+
+}
+
+
+
