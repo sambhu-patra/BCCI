@@ -164,11 +164,12 @@ p {
 }
 
 .container {
+  background-image: url(../images/backround.jpg);
   height: 100vh;
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  background: rgb(42, 3, 219);
+  /* background: rgb(42, 3, 219); */
 }
 
 /* ========================================
