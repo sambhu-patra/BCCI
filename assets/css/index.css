@@ -287,14 +287,14 @@ p {
       Media Query for mobile phone
 ====================================== */
 
-@media (min-width:320px) and (max-width:480px) {
+@media (min-width:320px) and (max-width:415px) {
   html {
-    font-size: 25%;
+    font-size: 23%;
   }
 
   .carousel-inner {
     left: 15vw;
-    background-size: 300px;
+    background-size: 270px;
     width: 70rem;
     height: 35rem;
   }
@@ -329,20 +329,20 @@ p {
 }
 
 /* ======================================
-      Media Query for Tablet and ipad
+      Media Query for Mobile
 ====================================== */
 
-@media (min-width:481px) and (max-width:780px) {
+@media (min-width:416px) and (max-width:530px) {
   html {
-    font-size: 35%;
+    font-size: 37%;
   }
 
   .carousel-inner {
-    top: 6.0rem;
+    top: 7.0rem;
     left: 14.0vw;
-    background-size: 400px;
-    width: 70rem;
-    height: 40rem;
+    background-size: 360px;
+    width: 60rem;
+    height: 30rem;
   }
 
   .carousel-inner h1,h2 {
@@ -375,18 +375,64 @@ p {
 }
 
 /* ======================================
-       Media query for large screen
+      Media Query for Tablet 
 ====================================== */
 
-@media (min-width:781px) and (max-width:900px) {
+@media (min-width:531px) and (max-width:600px) {
   html {
-    font-size: 50%;
+    font-size: 35%;
+  }
+
+  .carousel-inner {
+    top: 6.0rem;
+    left: 14.0vw;
+    background-size: 410px;
+    width: 70rem;
+    height: 35rem;
+  }
+
+  .carousel-inner h1,h2 {
+    font-size: 2.6rem; 
+  }
+
+ .last_section img {
+    left: 45vw;
+ }
+
+ .last_section h2 {
+    font-size: 3vw;
+    top: 8.4rem;
+    left: 15.4rem;
+}
+
+ .left {
+    left: 30vw;
+}
+
+ .vertical {
+    position: absolute;
+    left: 50vw;
+}
+
+  .right {
+    left: 55vw;
+}
+
+}
+
+/* ======================================
+       Media query for Tablet
+====================================== */
+
+@media (min-width:601px) and (max-width:670px) {
+  html {
+    font-size: 40%;
   }
 
   .carousel-inner {
     top: 8.0vw;
     left: 16.0vw;
-    background-size: 590px;
+    background-size: 450px;
     width: 70rem;
     height: 35rem;
   }
@@ -421,18 +467,18 @@ p {
 }
 
 /* ======================================
-      Media Query for Lapto and Desktop
+      Media Query for Tablet
 ====================================== */
 
-@media (min-width:900px) and (max-width:1200px) {
+@media (min-width:671px) and (max-width:780px) {
   html {
-    font-size: 60%;
+    font-size: 44%;
   }
 
   .carousel-inner {
     top: 6.0vw;
     left: 12.0vw;
-    background-size: 770px;
+    background-size: 580px;
     width: 80rem;
     height: 37.5rem;
   }
@@ -464,4 +510,106 @@ p {
     left: 55vw;
 }
 
+}
+
+/* ======================================
+      Media Query for Tablet
+====================================== */
+
+@media (min-width:781px) and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  .carousel-inner {
+    top: 6.0vw;
+    left: 12.0vw;
+    background-size: 650px;
+    width: 80rem;
+    height: 37.5rem;
+  }
+
+  .carousel-inner h1,h2 {
+    font-size: 2.6rem; 
+  }
+
+  .last_section img {
+    left: 45vw;
+ }
+
+  .last_section h2 {
+    font-size: 3vw;
+    top: 8.4rem;
+    left: 15.4rem;
+}
+
+  .left {
+    left: 30vw; 
+}
+
+  .vertical{
+    position: absolute;
+    left: 50vw;
+}
+
+  .right {
+    left: 55vw;
+}
+
+}
+
+/* ======================================
+      Media Query for Laptop and Desktop
+====================================== */
+
+@media (min-width:900px) and (max-width: 1000px) {
+  html {
+    font-size: 57%;
+  }
+
+  .carousel-inner {
+    top: 6.0vw;
+    left: 12.0vw;
+    background-size: 740px;
+    width: 80rem;
+    height: 37.5rem;
+  }
+
+  .carousel-inner h1,h2 {
+    font-size: 2.6rem; 
+  }
+
+  .last_section img {
+    left: 45vw;
+ }
+
+  .last_section h2 {
+    font-size: 3vw;
+    top: 8.4rem;
+    left: 15.4rem;
+}
+
+  .left {
+    left: 30vw; 
+}
+
+  .vertical{
+    position: absolute;
+    left: 50vw;
+}
+
+  .right {
+    left: 55vw;
+}
+
+}
+
+/* ======================================
+      Media Query for Laptop and Desktop
+====================================== */
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 62%;
+  }
 }
