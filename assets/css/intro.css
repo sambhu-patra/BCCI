@@ -57,6 +57,9 @@ table {
 /* ========================================
         Container cascading
 ======================================== */
+body {
+  background: rgb(42, 3, 219);
+}
 
 html {
   font-size: 62.5%;
@@ -121,10 +124,10 @@ nav {
 }
 
 .image {
-  width: 35vw;
-  height: 50vh;
+  width: 35rem;
+  height: 50rem;
   position: relative;
-  top: -2.4rem;
+  top: 10.5rem;
 }
 
 img {
@@ -135,16 +138,17 @@ img {
 .paragraph {
   width: 65vw;
   height: 70vh;
-  padding-left: 2rem;
+  padding-bottom: 2rem;
   box-sizing: border-box;
   position: relative;
-  top: 5.5rem;
+  top: 12vw;
+  margin-bottom: 4vw;
 } 
 
 p {
   color: #fff;
-  font-size: 2vw;
-  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  font-family: 'Play', sans-serif;
 }
 
 .headline { 
@@ -164,12 +168,10 @@ p {
 }
 
 .container {
-  background-image: url(../images/backround.jpg);
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  /* background: rgb(42, 3, 219); */
 }
 
 /* ========================================
@@ -183,38 +185,37 @@ html {
 }
 
 .paragraph {
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
+  height: auto;
   padding-left: 0.3rem;
   box-sizing: border-box;
   position: relative;
-  top: 7.5rem;
+  top: 9.5vw;
 } 
 
 .container {
   display: block;
-  width: 100vw;
-  height: 140vh;
 }
 
 p {
   color: #fff;
-  font-size: 4.5vw;
-  font-family: 'Dosis', sans-serif;
+  font-size: 4rem;
   position: relative;
-  bottom: 1.5rem;
+  padding: 0 8px;
+  box-sizing: border-box;
+  bottom: 1.0rem;
 }
 
 .image {
   width: 95vw;
   height: 50vh;
   position: relative;
-  top: 1rem;
+  top: 2vw;
 }
 
 .image img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .headline h1 {
@@ -232,32 +233,37 @@ p {
 @media(min-width:421px) and (max-width:780px) {
 
 html {
-font-size: 40%;
+font-size: 42%;
+}
+
+.container {
+  display: block;
+  position: relative;
+  top: 0.8vw;
+  width: 100%;
 }
 
 .paragraph {
-  width: 100vw;
+  width: 100%;
   height: auto;
+  position: relative;
+  top: 20rem;
   padding-left: 2.3rem;
+  padding-right: 2.3rem;
   box-sizing: border-box;
 } 
 
 p {
   position: relative;
-  top: 6.0rem;
-  font-size: 2vw;
-}
-
-.image {
-  width: 95vw;
-  height: 50vh;
+  top: 2.0rem;
+  font-size: 3.4vw;
 }
 
 .image img {
-  width: 100%;
-  height: auto;
+  width: 50rem;
+  height: 60rem;
   position: relative;
-  top: 7.0rem;
+  left: 18.8vw;
 }
 
 .headline h1 {
