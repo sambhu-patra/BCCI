@@ -141,26 +141,24 @@ nav {
 
 .des {
   text-align: center;
-  position: relative;
-  bottom: 9.5rem;
 }
 
 .des h3 {
-  font-size: 3vw;
+  font-size: 2vw;
   color: #fff;
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  left: -3.5rem;
+  /* left: -3.5rem; */
 }
 
 .des h4 {
-  font-size: 3vw;
+  font-size: 2vw;
   color: rgb(243, 108, 19);
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  left: -5.5rem;
+  /* left: -5.5rem; */
 }
 
 .container {
