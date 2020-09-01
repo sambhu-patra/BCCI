@@ -144,12 +144,11 @@ nav {
 }
 
 .des h3 {
-  font-size: 2vw;
+  font-size: 0.6vw;
   color: #fff;
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  /* left: -3.5rem; */
 }
 
 .des h4 {
@@ -158,7 +157,6 @@ nav {
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  /* left: -5.5rem; */
 }
 
 .container {
