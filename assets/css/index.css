@@ -57,6 +57,10 @@ table {
      Header Cascading
 =========================== */
 
+body {
+  background: rgb(39, 8, 211);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -132,12 +136,13 @@ img {
 ====================================== */
 
 .carousel-inner {
-  position: absolute;
-  top: 9.0rem;
-  left: 18.0rem;
+  position: relative;
+  top: 7.0rem;
+  left: 17.0vw;
   background-image: url(../images/dhoni.jpg);
-  width: 70%;
-  height: 70%;
+  background-size: 800px;
+  width: 80rem;
+  height: 40rem;
   animation: slider 25s infinite linear;
 }
 
@@ -147,7 +152,8 @@ img {
   position: absolute;
   bottom: 6.0rem;
   left: 3.0rem;
-  font-family: 'Play', sans-serif;}
+  font-family: 'Play', sans-serif;
+}
 
   .carousel-inner h1 {
   font-size: 3.6rem;
@@ -235,23 +241,22 @@ p {
 
 @media (max-width:320px) {
   html {
-    font-size: 25%;
+    font-size: 20%;
   }
 
   .carousel-inner {
-    top: 9.0rem;
-    left: 10.0rem;
-    background-size: 210px;
-    width: 70%;
-    height: 20%;
+    left: 18.0vw;
+    background-size: 170px;
+    width: 50rem;
+    height: 25rem;
   }
 
   .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
+    font-size: 2.6vw; 
   }
 
  .last_section img {
-   left: 35.0rem;
+   left: 45.0vw;
  }
 
  .last_section h2 {
@@ -260,20 +265,20 @@ p {
    text-transform: uppercase;
    position: absolute;
    top: 8.4rem;
-   left: 15.4rem;
+   left: 15.4vw;
 }
 
 .left {
-  left: 30vw;
+  left: 28vw;
 }
 
 .vertical {
   position: absolute;
-  left: 52.6vw;
+  left: 60.6vw;
 }
 
 .right {
-  left: 55vw;
+  left: 68vw;
 }
 
 }
@@ -284,15 +289,14 @@ p {
 
 @media (min-width:320px) and (max-width:480px) {
   html {
-    font-size: 30%;
+    font-size: 25%;
   }
 
   .carousel-inner {
-    top: 4.0rem;
-    left: 14vw;
-    background-size: 550px;
-    width: 70%;
-    height: 30%;
+    left: 15vw;
+    background-size: 300px;
+    width: 70rem;
+    height: 35rem;
   }
 
   .carousel-inner h1,h2 {
@@ -330,15 +334,15 @@ p {
 
 @media (min-width:481px) and (max-width:780px) {
   html {
-    font-size: 40%;
+    font-size: 35%;
   }
 
   .carousel-inner {
     top: 6.0rem;
-    left: 16.0vw;
-    background-size: 530px;
-    width: 70%;
-    height: 45%;
+    left: 14.0vw;
+    background-size: 400px;
+    width: 70rem;
+    height: 40rem;
   }
 
   .carousel-inner h1,h2 {
@@ -380,11 +384,11 @@ p {
   }
 
   .carousel-inner {
-    top: 6.0rem;
-    left: 18.0vw;
-    background-size: 630px;
-    width: 70%;
-    height: 55%;
+    top: 8.0vw;
+    left: 16.0vw;
+    background-size: 590px;
+    width: 70rem;
+    height: 35rem;
   }
 
   .carousel-inner h1,h2 {
@@ -426,11 +430,11 @@ p {
   }
 
   .carousel-inner {
-    top: 6.0rem;
-    left: 16.0rem;
-    background-size: 730px;
-    width: 70%;
-    height: 55%;
+    top: 6.0vw;
+    left: 12.0vw;
+    background-size: 770px;
+    width: 80rem;
+    height: 37.5rem;
   }
 
   .carousel-inner h1,h2 {
