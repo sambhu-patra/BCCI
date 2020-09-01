@@ -200,11 +200,34 @@ html {
   width: 50%;
 }
 
-.des h3 ,h4 {
+.des h3 {
+  font-size: 5vw;
+} 
+
+.des h4 {
   font-size: 5vw;
 } 
 
 }
+
+/* =================================
+    Media Query for Tablet and ipad
+===================================== */
+
+@media (min-width: 781px) and (max-width: 1199px) {
+  .container {
+    width: 25%;
+  }
+  
+  .des h3 {
+    font-size: 4vw;
+  } 
+  
+  .des h4 {
+    font-size: 3vw;
+  } 
+  
+  }
 
 /* ====================================
     Media Query for Laptop and Desktop
