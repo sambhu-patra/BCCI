@@ -1,4 +1,5 @@
-/* ======================================
+
+  /* ======================================
             CSS reset
 ====================================== */
 
@@ -22,7 +23,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+} 
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -52,13 +53,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* ===========================
-     Header Cascading
-=========================== */
-
 body {
-  background: rgb(39, 8, 211);
+  
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 html {
@@ -68,10 +65,13 @@ html {
 .main { 
   width: 100%;
   height: auto;
-  background: #7070f5;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  background: rgb(61, 10, 129);
 }
 
-nav {
+.logo_sec {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -86,7 +86,7 @@ nav {
   align-items: center;
 }
 
-img {
+.logo img {
   width: 5.9rem;
   height: 5.9rem;
   position: absolute;
@@ -98,6 +98,7 @@ img {
   color: #fff;
   position: absolute;
   left: 12.0rem;
+  text-shadow: .2rem .2rem .4rem #000000;
 }
 
 .navbar {
@@ -110,7 +111,7 @@ img {
 .navbar a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2.4vw;
+  font-size: 1.7vw;
   font-family: monospace;
   color: #fff;
 }
@@ -119,87 +120,235 @@ img {
   color: #ff0000;
 }
 
+.navbar a:hover {
+  box-shadow: .4rem .4rem .7rem .2rem rgba(0,0,0,0.6);
+  color: #ee9714;
+}
+
 .navbar hr {
   height: 4.0rem;
 }
 
-.slide_body {
-  width: 100%;
-  height: 87vh;
+.carousel-caption h5 {
+  font-size:xx-large;
+}
+
+.carousel-item {
+  height: auto;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+ .carousel-caption h5 {
   position: relative;
-  top: 0.8rem;
+  top: 10rem;
+  left: -15vw; 
+  color: rgb(245, 222, 179); 
+  font-size: 4.5vw;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: .2rem .2rem .4rem #000000;
+  letter-spacing: 3px; 
+}
+
+.carousel-item p {
+  position: relative;
+  top: 5rem;
+  left: -20vw;
+  color: rgb(245, 222, 179);
+  font-size: 4vw;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: .2rem .2rem .4rem #000000;
+  letter-spacing: 3px;
+}
+
+.animate__bounceInLeft,.animate__fadeInDown,.animate__zoomIn {
+  animation-delay: 1s;
+}
+
+.animate__bounceInUp,.animate__backInUp,.animate__bounceIn {
+  animation-delay: 2s;
+}
+
+/* ===========================================
+          players section
+===========================================  */
+
+#players {
+  width: 90vw;
+  position: relative;
+  top: 7rem;
+  left: 5vw;
+}
+
+.gallery { 
+  box-shadow: .4rem .4rem .7rem .2rem rgba(0,0,0,0.6);
+  overflow: hidden; 
+  margin-top: 2.0rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery img:hover {
+  transform: scale(1.1,1.1);
+  transition: .3s transform;
+}
+
+.name {
+  font-size: 3vw;
+  font-style: italic;
+  color: #fff;
+  text-shadow: .2rem .2rem .4rem #000000;
+  font-style: italic;
+  position: relative;
+  top: -10vw;
+  left: 1.5vw;
+}
+
+.title {
+  font-size: 3vw;
+  color: rgb(243, 108, 19);
+  text-shadow: .2rem .2rem .4rem #000000;
+  font-style: italic;
+  position: relative;
+  top: -10vw;
+  left: 5vw;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+.container {
+  float: left;
+  padding: 0rem .6rem;
+  margin-top: 2.6rem;
   background: rgb(39, 8, 211);
+  width: 25%;
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgba(9,9,121,1) 85%, rgb(241, 154, 23) 100%);
 }
 
 /* ======================================
-            Slide
+    intro section
 ====================================== */
 
-.carousel-inner {
-  position: relative;
-  top: 7.0rem;
-  left: 17.0vw;
-  background-image: url(../images/dhoni.jpg);
-  background-size: 800px;
-  width: 80rem;
-  height: 40rem;
-  animation: slider 25s infinite linear;
-}
-
-.carousel-inner h2 {
-  font-size: 3.6rem;
-  color: #fff;
-  position: absolute;
-  bottom: 6.0rem;
-  left: 3.0rem;
-  font-family: 'Play', sans-serif;
-}
-
-  .carousel-inner h1 {
-  font-size: 3.6rem;
-  color: #fff;
-  position: absolute;
-  bottom: 1.0rem;
-  left: 25.0rem;
-  font-family: 'Play', sans-serif;
-}
-
-/* ========================================
-        Animation
-========================================   */
-
-@keyframes slider {
-  0%{background-image: url(../images/dhoni.jpg);
-  }
-
-  35%{background-image: url(../images/sourav.jpg);
-  }
-
-  75%{background-image: url(../images/bcci.jpg);
-  }
-}
-
-.last_section {
+.head_div {
   width: 100%;
-  height: 40vh;
-  background: #7070f5;;
-  position: absolute;
-  top: 62.04rem;
+  height: 30vh;
+  box-shadow: 0 0 1rem 0 rgba(0,0,0,0.6);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 35%, rgba(200,212,255,1) 200%);
+}
+.headline h1 {
+  color: black;
+  font-size: 3rem;
+  position: relative;
+  top: 2.2rem;
+  left: 6vw;
 }
 
-.last_section img {
-  position: absolute;
-  left: 60.0rem;
-  top:1.5rem;
+.svg1 {
+  position: relative;
+  right: 0;
 }
 
-.last_section h2 {
-  font-size: 2.0rem;
-  color: #f5be6b;
-  text-transform: uppercase;
+.intro_sec {
+  width: 80vw;
+  height: auto;
+  background-color: rgb(235, 245, 245);
   position: absolute;
-  top: 8.4rem;
-  left: 39.4rem;
+  top: 20rem;
+  left: 10vw;
+  box-shadow: .7rem .7rem .7rem .7rem rgba(0,0,0,0.6);
+}
+
+.image {
+  margin: 5rem;
+  box-shadow: .7rem .7rem .7rem .7rem rgba(0,0,0,0.6);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph p {
+  position: relative;
+  top: .2rem;
+  font-size: 2rem;
+  margin: 3rem;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+      about section
+======================================== */
+
+#last_section {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
+  width: 90vw;
+  height: 270vh;
+  position: relative;
+  top: 5.8rem;
+  left: 5vw;
+}
+
+.about {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(21, 3, 56) 100%);
+  box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.4);
+  width: 70vw;
+  height: 257vh;
+  position: relative;
+  top: 5rem;
+  left: 10vw;
+}
+
+.about p {
+  color: whitesmoke;
+  font-size: 2.2vw;
+  position: absolute;
+  top: 8rem;
+  left: 1vw;
+  margin: 2rem;
+  font-family: 'Play', sans-serif;
+  letter-spacing: 2px;
+}
+
+.about h1 {
+  color: whitesmoke;
+  font-size: 2vw;
+  position: absolute;
+  top: 3rem;
+  left: 5vw;
+  border: 2px solid #f5d6b3;
+  border-radius: 40px;
+  padding: 7px;
+}
+
+/* ==============================
+      footer section
+============================== */
+
+.footer_sec img {
+  width: 5.4vw;
+  height: 5.4vw;
+  position: absolute;
+  top: 128rem;
+  left: 48.6vw;
+}
+
+.caption {
+  position: absolute;
+  top: 138rem;
+  left: 40vw;
+  font-size: 1.1vw;
+  letter-spacing: .2rem;
+  color: #ee9714;
 }
 
 .left {
@@ -207,409 +356,333 @@ img {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  left: 50.0rem;
+  left: 35.0vw;
+  top: 136rem;
+  color: white;
+  font-size: 1vw;
 }
 
 .right {
   position: absolute;
-  left: 66.0rem;
-}
-
-.left {
-  left: 35vw;
+  left: 46vw;
+  top: 136rem;
+  color: white;
+  font-size: 1vw;
 }
 
 .vertical {
   position: absolute;
-  left: 48vw;
-}
-
-.right {
-  left: 50vw;
+  left: 44.6vw;
+  top: 136rem;
+  color: white;
+  font-size: 1vw;
 }
 
 p {
-  color: #fff;
-  font-size: 2.0rem;
-  position: absolute;
-  bottom: 4.2rem;
+  font-size: 2rem;
+  color: whitesmoke;
+  position: relative;
+  top: 3rem;
+  margin: 10rem;
 }
 
-/* ======================================
-      Media Query for small device
-====================================== */
+/* ==========================================
+    media Query for small device
+========================================== */
 
-@media (max-width:320px) {
+@media (max-width:150px) {
   html {
     font-size: 20%;
   }
 
-  .carousel-inner {
-    left: 18.0vw;
-    background-size: 170px;
-    width: 50rem;
-    height: 25rem;
+  .container {
+    width: 100%;
+    position: relative;
+    left: 1vw;
   }
 
-  .carousel-inner h1,h2 {
-    font-size: 2.6vw; 
-  }
-
- .last_section img {
-   left: 45.0vw;
- }
-
- .last_section h2 {
-   font-size: 3vw;
-   color: #f5be6b;
-   text-transform: uppercase;
-   position: absolute;
-   top: 8.4rem;
-   left: 15.4vw;
-}
-
-.left {
-  left: 28vw;
-}
-
-.vertical {
-  position: absolute;
-  left: 60.6vw;
-}
-
-.right {
-  left: 68vw;
-}
-
-}
-
-/* ======================================
-      Media Query for mobile phone
-====================================== */
-
-@media (min-width:320px) and (max-width:415px) {
-  html {
-    font-size: 23%;
-  }
-
-  .carousel-inner {
-    left: 15vw;
-    background-size: 270px;
-    width: 70rem;
-    height: 35rem;
-  }
-
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
-  }
-
- .last_section img {
-   left: 45vw;
- }
-
- .last_section h2 {
-   font-size: 3vw;
-   top: 8.4rem;
-   left: 15.4rem;
-}
-
- .left {
-   left: 28vw; 
-}
-
-.vertical {
-  position: absolute;
-  left: 53.0vw;
-}
-
- .right {
-   left: 58vw;
-}
-
-}
-
-/* ======================================
-      Media Query for Mobile
-====================================== */
-
-@media (min-width:416px) and (max-width:530px) {
-  html {
-    font-size: 37%;
-  }
-
-  .carousel-inner {
-    top: 7.0rem;
-    left: 14.0vw;
-    background-size: 360px;
-    width: 60rem;
-    height: 30rem;
-  }
-
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
-  }
-
- .last_section img {
-    left: 45vw;
- }
-
- .last_section h2 {
-    font-size: 3vw;
-    top: 8.4rem;
-    left: 15.4rem;
-}
-
- .left {
-    left: 30vw;
-}
-
- .vertical {
+  .footer_sec img{
     position: absolute;
-    left: 50vw;
+    top: 145rem; 
+    left: 48.6vw;
+  }
+
+  .caption {
+    position: absolute;
+    left: 22vw;
+    top: 148rem ;
+    font-size: 4.1vw;
+  }
+
+  .left {
+    position: absolute;
+    left: 14.0vw;
+    top: 145rem;
+    color: white;
+    font-size: 3vw;
+  }
+  
+  .right {
+    position: absolute;
+    left: 37vw;
+    top: 145rem;
+    color: white;
+    font-size: 3vw;
+  }
+  
+  .vertical {
+    position: absolute;
+    left: 36.6vw;
+    top: 145rem;
+    color: white;
+    font-size: 1vw;
+  }
+
+  .carousel-caption h5 {
+    position: absolute;
+    top: 100rem;
+    left: -10vw;
+    letter-spacing: 3px;
+  }
+  
+  .carousel-caption p {
+    position: relative;
+    top: 5rem;
+    left: -20vw;
+    color: rgb(245, 222, 179);
+    font-size: 4vw;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: .2rem .2rem .4rem #000000;
+    letter-spacing: 3px;
+  }
+
+  .about {
+    height: 158.5vh;
+    position: relative;
+    left: 10vw;
+  }
+
+  .about p {
+    font-size: 2.9vw;
+  }
 }
+
+/* ==========================================
+    media Query for mobile device
+========================================== */
+
+@media (min-width:151px) and (max-width:320px) {
+  html {
+    font-size: 20%;
+  }
+
+  .container {
+    width: 100%;
+    position: relative;
+    left: 1vw;
+  }
+
+  p {
+    font-size: 3.4vw;
+  }
+
+  .footer_sec img {
+    top: 154rem; 
+    left: 48.6vw;
+  }
+
+  .caption {
+    left: 22vw;
+    top: 159rem ;
+    font-size: 4.1vw;
+  }
+
+  .left {
+    left: 14.0vw;
+    top: 155rem;
+    font-size: 3vw;
+  }
 
   .right {
-    left: 55vw;
-}
-
-}
-
-/* ======================================
-      Media Query for Tablet 
-====================================== */
-
-@media (min-width:531px) and (max-width:600px) {
-  html {
-    font-size: 35%;
-  }
-
-  .carousel-inner {
-    top: 6.0rem;
-    left: 14.0vw;
-    background-size: 410px;
-    width: 70rem;
-    height: 35rem;
-  }
-
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
-  }
-
- .last_section img {
-    left: 45vw;
- }
-
- .last_section h2 {
+    left: 38.5vw;
+    top: 155rem;
     font-size: 3vw;
-    top: 8.4rem;
-    left: 15.4rem;
+  }
+
+  .vertical {
+    left: 36.9vw;
+    top: 155.5rem;
+    font-size: 2vw;
+  }
+
+  .about {
+    height: 158.5vh;
+    position: relative;
+    left: 10vw;
+  }
+
+  .about p {
+    font-size: 2.9vw;
+  }
 }
 
- .left {
-    left: 30vw;
-}
+/* ==========================================
+    media Query for mobile device
+========================================== */
 
- .vertical {
-    position: absolute;
-    left: 50vw;
-}
+@media (min-width:321px) and (max-width:480px) {
+  
+  html {
+    font-size: 30%;
+  }
 
+  .container {
+    width: 50%;
+    position: relative;
+    left: 1vw;
+  }
+
+  .name {
+    font-size: 4.5vw;
+  }
+
+  .title {
+    font-size: 4.5vw;
+  }
+
+  #last_section {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
+    width: 90vw;
+    height: 176vh;
+    position: relative;
+    top: 5.8rem;
+    left: 3vw;
+  }
+
+  .about {
+    height: 170.5vh;
+    position: relative;
+    left: 10vw;
+  }
+
+  .about p {
+    font-size: 2.9vw;
+  }
+
+  .footer_sec img {
+
+    top: 135rem; 
+    left: 48.6vw;
+  }
+  
+  .caption {
+    left: 25vw;
+    top: 140rem ;
+    font-size: 3.1vw;
+  }
+  
+  .left {
+    left: 25.0vw;
+    top: 140rem;
+    font-size: 2vw;
+  }
+  
   .right {
-    left: 55vw;
+    left: 44vw;
+    top: 140rem;
+    font-size: 2vw;
+  }
+  
+  .vertical {
+    left: 41.6vw;
+    top: 140.6rem;
+    font-size: 1vw;
+  }
+
+  p {
+    font-size: 2.4rem;
+  }
 }
 
-}
+/* ==========================================
+    media Query for Tablet
+========================================== */
 
-/* ======================================
-       Media query for Tablet
-====================================== */
-
-@media (min-width:601px) and (max-width:670px) {
+@media (min-width:481px) and (max-width:780px) {
   html {
     font-size: 40%;
   }
 
-  .carousel-inner {
-    top: 8.0vw;
-    left: 16.0vw;
-    background-size: 450px;
-    width: 70rem;
-    height: 35rem;
+  .container {
+    width
+    : 50%;
+  }
+  .name {
+    font-size: 4.5vw;
   }
 
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
+  .title {
+    font-size: 4.5vw;
   }
 
- .last_section img {
-   left: 45vw;
- }
-
- .last_section h2 {
-   font-size: 3vw;
-   top: 8.4rem;
-   left: 15.4rem;
-}
-
- .left {
-    left: 30vw; 
-}
-
- .vertical {
-    position: absolute;
-    left: 50vw;
-}
-
- .right {
-    left: 55vw;
-}
-
-}
-
-/* ======================================
-      Media Query for Tablet
-====================================== */
-
-@media (min-width:671px) and (max-width:780px) {
-  html {
-    font-size: 44%;
+  #last_section {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
+    width: 90vw;
+    height: 264.6vh;
+    position: relative;
+    top: 5.8rem;
+    left: 3vw;
   }
 
-  .carousel-inner {
-    top: 6.0vw;
-    left: 12.0vw;
-    background-size: 580px;
-    width: 80rem;
-    height: 37.5rem;
+  .name {
+    font-size: 4.5vw;
   }
 
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
+  .title {
+    font-size: 4.5vw;
   }
 
-  .last_section img {
-    left: 45vw;
- }
+  .about {
+    height: 258.5vh;
+    position: relative;
+    left: 10vw;
+  }
 
-  .last_section h2 {
-    font-size: 3vw;
-    top: 8.4rem;
-    left: 15.4rem;
-}
+  .about p {
+    font-size: 2.9vw;
+  }
+
+  .caption {
+    left: 25vw;
+    top: 140rem ;
+    font-size: 3.1vw;
+  }
 
   .left {
-    left: 30vw; 
-}
-
-  .vertical{
-    position: absolute;
-    left: 50vw;
-}
-
+    left: 25.0vw;
+    top: 140rem;
+    font-size: 2vw;
+  }
+  
   .right {
-    left: 55vw;
+    left: 44vw;
+    top: 140rem;
+    font-size: 2vw;
+  }
+  
+  .vertical {
+    left: 41.6vw;
+    top: 140.6rem;
+    font-size: 1vw;
+  }
 }
 
-}
+/* ==========================================
+    media Query for Desktop and Laptop
+========================================== */
 
-/* ======================================
-      Media Query for Tablet
-====================================== */
-
-@media (min-width:781px) and (max-width: 900px) {
+@media (min-width:781px) and (max-width:1000px) {
   html {
-    font-size: 50%;
-  }
-
-  .carousel-inner {
-    top: 6.0vw;
-    left: 12.0vw;
-    background-size: 650px;
-    width: 80rem;
-    height: 37.5rem;
-  }
-
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
-  }
-
-  .last_section img {
-    left: 45vw;
- }
-
-  .last_section h2 {
-    font-size: 3vw;
-    top: 8.4rem;
-    left: 15.4rem;
-}
-
-  .left {
-    left: 30vw; 
-}
-
-  .vertical{
-    position: absolute;
-    left: 50vw;
-}
-
-  .right {
-    left: 55vw;
-}
-
-}
-
-/* ======================================
-      Media Query for Laptop and Desktop
-====================================== */
-
-@media (min-width:900px) and (max-width: 1000px) {
-  html {
-    font-size: 57%;
-  }
-
-  .carousel-inner {
-    top: 6.0vw;
-    left: 12.0vw;
-    background-size: 740px;
-    width: 80rem;
-    height: 37.5rem;
-  }
-
-  .carousel-inner h1,h2 {
-    font-size: 2.6rem; 
-  }
-
-  .last_section img {
-    left: 45vw;
- }
-
-  .last_section h2 {
-    font-size: 3vw;
-    top: 8.4rem;
-    left: 15.4rem;
-}
-
-  .left {
-    left: 30vw; 
-}
-
-  .vertical{
-    position: absolute;
-    left: 50vw;
-}
-
-  .right {
-    left: 55vw;
-}
-
-}
-
-/* ======================================
-      Media Query for Laptop and Desktop
-====================================== */
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 62%;
+    font-size: 52%;
   }
 }
