@@ -53,6 +53,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 body {
   
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -243,6 +244,7 @@ html {
   box-shadow: 0 0 1rem 0 rgba(0,0,0,0.6);
   background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 35%, rgba(200,212,255,1) 200%);
 }
+
 .headline h1 {
   color: black;
   font-size: 3rem;
@@ -401,7 +403,7 @@ p {
     left: 1vw;
   }
 
-  .footer_sec img{
+  .footer_sec img {
     position: absolute;
     top: 145rem; 
     left: 48.6vw;
