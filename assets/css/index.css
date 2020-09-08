@@ -184,7 +184,7 @@ html {
 .gallery { 
   box-shadow: .4rem .4rem .7rem .2rem rgba(0,0,0,0.6);
   overflow: hidden; 
-  margin-top: 2.0rem;
+  margin-top: .6rem;
 }
 
 .gallery img {
@@ -204,7 +204,7 @@ html {
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  top: -10vw;
+  top: -7vw;
   left: 1.5vw;
 }
 
@@ -214,7 +214,7 @@ html {
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  top: -10vw;
+  top: -7vw;
   left: 5vw;
 }
 
@@ -224,7 +224,7 @@ html {
 
 .container {
   float: left;
-  padding: 0rem .6rem;
+  padding: 0rem .9rem;
   margin-top: 2.6rem;
   background: rgb(39, 8, 211);
   width: 25%;
@@ -246,11 +246,19 @@ html {
 }
 
 .headline h1 {
+  width: 50vw;
   color: black;
-  font-size: 3rem;
+  font-size: 2vw;
   position: relative;
   top: 2.2rem;
-  left: 6vw;
+  left: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headline hr {
+  width: 99.5%;
+  position: relative;
+  left: .2rem;
 }
 
 .svg1 {
@@ -329,7 +337,7 @@ html {
   left: 5vw;
   border: 2px solid #f5d6b3;
   border-radius: 40px;
-  padding: 7px;
+  padding: 12px;
 }
 
 /* ==============================
@@ -397,10 +405,53 @@ p {
     font-size: 20%;
   }
 
+  .logo_sec {
+    display: block;
+  }
+
+  .logo img {
+    position: absolute;
+    top: 1rem;
+    left: 15.0rem;
+  }
+  .logo h2 {
+    font-size: 2.5rem;
+    top: 3rem;
+    left: 23.0rem;
+  }
+
+  .navbar {
+    position: relative;
+    top: 5rem;
+    left: -10rem;
+  }
+
+  .navbar a {
+    font-size: 2.3rem;
+    position: relative;
+    left: 39.5vw;
+  }
+
   .container {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border: 0;
     width: 100%;
     position: relative;
-    left: 1vw;
+    left: -5vw;
+  }
+
+  .name {
+    position: relative;
+    top: -15vw;
+    font-size: 7.8vw;
+  }
+  
+  .title {
+    font-size: 7.8vw;
+    top: -15vw;
+    left: 0
   }
 
   .footer_sec img {
@@ -467,6 +518,15 @@ p {
   .about p {
     font-size: 2.9vw;
   }
+
+  .headline h1 {
+    font-size: 4vw;
+  }
+
+  .intro_sec {
+    position: absolute;
+    left: 5px;
+  }
 }
 
 /* ==========================================
@@ -478,10 +538,26 @@ p {
     font-size: 20%;
   }
 
+  .navbar a {
+    font-size: 2.5rem;
+  }
+
   .container {
     width: 100%;
     position: relative;
-    left: 1vw;
+    left: -3vw;
+  }
+
+  .name {
+    font-size: 6rem;
+    top: -22vw; 
+    left: 0;
+  }
+  
+  .title {
+    font-size: 6rem;
+    top: -22.8vw;
+    left: 0
   }
 
   p {
@@ -538,18 +614,26 @@ p {
     font-size: 30%;
   }
 
+  .navbar a {
+    font-size: 3.5rem;
+  }
+
   .container {
     width: 50%;
     position: relative;
-    left: 1vw;
+    left: -.2vw;
   }
 
   .name {
     font-size: 4.5vw;
+    position: relative;
+    top: -15vw;
   }
 
   .title {
     font-size: 4.5vw;
+    position: relative;
+    top: -15vw;
   }
 
   #last_section {
@@ -616,15 +700,19 @@ p {
   }
 
   .container {
-    width
-    : 50%;
+    width: 50%;
   }
+  
   .name {
     font-size: 4.5vw;
+    position: relative;
+    top: -13vw;
   }
 
   .title {
     font-size: 4.5vw;
+    position: relative;
+    top: -13vw;
   }
 
   #last_section {
