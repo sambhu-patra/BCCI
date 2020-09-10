@@ -72,7 +72,7 @@ html {
   background: rgb(61, 10, 129);
 }
 
-.logo_sec {
+.logosec {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -174,11 +174,11 @@ html {
           players section
 ===========================================  */
 
-#players {
+.players {
   width: 90vw;
   position: relative;
   top: 7rem;
-  left: 5vw;
+  padding-left: 7vw;
 }
 
 .gallery { 
@@ -204,8 +204,6 @@ html {
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  top: -7vw;
-  left: 1.5vw;
 }
 
 .title {
@@ -214,8 +212,7 @@ html {
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
-  top: -7vw;
-  left: 5vw;
+  left: 2vw;
 }
 
 .gallery a {
@@ -238,7 +235,7 @@ html {
     intro section
 ====================================== */
 
-.head_div {
+.headdiv {
   width: 100%;
   height: 30vh;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,0.6);
@@ -266,7 +263,7 @@ html {
   right: 0;
 }
 
-.intro_sec {
+.introsec {
   width: 80vw;
   height: auto;
   background-color: rgb(235, 245, 245);
@@ -299,13 +296,12 @@ html {
       about section
 ======================================== */
 
-#last_section {
+.lastsection {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
   width: 90vw;
   height: 270vh;
   position: relative;
   top: 5.8rem;
-  left: 5vw;
 }
 
 .about {
@@ -344,7 +340,7 @@ html {
       footer section
 ============================== */
 
-.footer_sec img {
+.footersec img {
   width: 5.4vw;
   height: 5.4vw;
   position: absolute;
@@ -405,7 +401,7 @@ p {
     font-size: 20%;
   }
 
-  .logo_sec {
+  .logosec{
     display: block;
   }
 
@@ -454,7 +450,7 @@ p {
     left: 0
   }
 
-  .footer_sec img {
+  .footersec img {
     position: absolute;
     top: 145rem; 
     left: 48.6vw;
@@ -509,10 +505,18 @@ p {
     letter-spacing: 3px;
   }
 
+  .lastsection {
+    height: 130vh;
+  }
+
   .about {
-    height: 158.5vh;
+    height: 100vh;
     position: relative;
     left: 10vw;
+  }
+  .about h1 {
+    padding: 3px;
+    font-size: 4vw;
   }
 
   .about p {
@@ -523,7 +527,7 @@ p {
     font-size: 4vw;
   }
 
-  .intro_sec {
+  .introsec {
     position: absolute;
     left: 5px;
   }
@@ -550,13 +554,11 @@ p {
 
   .name {
     font-size: 6rem;
-    top: -22vw; 
     left: 0;
   }
   
   .title {
     font-size: 6rem;
-    top: -22.8vw;
     left: 0
   }
 
@@ -564,7 +566,7 @@ p {
     font-size: 3.4vw;
   }
 
-  .footer_sec img {
+  .footersec img {
     top: 162rem; 
     left: 48.6vw;
   }
@@ -594,10 +596,20 @@ p {
   }
 
   .about {
-    height: 158.5vh;
+    height: 140.5vh;
     position: relative;
     left: 10vw;
   }
+
+  .lastsection {
+    height: 150vh;
+  }
+
+  .about h1 {
+    font-size: 3vw;
+    border-radius: 2px;
+    padding: 3px;
+}
 
   .about p {
     font-size: 2.9vw;
@@ -625,37 +637,40 @@ p {
   }
 
   .name {
-    font-size: 4.5vw;
-    position: relative;
-    top: -15vw;
+    font-size: 5.5vw;
   }
 
   .title {
-    font-size: 4.5vw;
-    position: relative;
-    top: -15vw;
+    font-size: 5.5vw;
   }
 
-  #last_section {
+  .lastsection {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
     width: 90vw;
-    height: 176vh;
+    height: 186vh;
     position: relative;
     top: 5.8rem;
     left: 3vw;
   }
 
   .about {
-    height: 170.5vh;
+    height: 178.5vh;
     position: relative;
     left: 10vw;
+  }
+
+  .about h1 {
+    position: absolute;
+    top: 1.5rem;
+    border-radius: 40px;
+    padding: 5px;
   }
 
   .about p {
     font-size: 2.9vw;
   }
 
-  .footer_sec img {
+  .footersec img {
     top: 135rem; 
     left: 48.6vw;
   }
@@ -703,32 +718,20 @@ p {
   }
 
   .name {
-    font-size: 4.5vw;
-    position: relative;
-    top: -13vw;
+    font-size: 5.5vw;
   }
 
   .title {
-    font-size: 4.5vw;
-    position: relative;
-    top: -13vw;
+    font-size: 5.5vw;
   }
 
-  #last_section {
+  .lastsection {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
     width: 90vw;
     height: 264.6vh;
     position: relative;
     top: 5.8rem;
     left: 3vw;
-  }
-
-  .name {
-    font-size: 4.5vw;
-  }
-
-  .title {
-    font-size: 4.5vw;
   }
 
   .about {
@@ -739,6 +742,11 @@ p {
 
   .about p {
     font-size: 2.9vw;
+  }
+
+  .about h1 {
+    position: absolute;
+    top: 1.5rem;
   }
 
   .caption {
