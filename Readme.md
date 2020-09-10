@@ -6,4 +6,4 @@ Wbesite of Board of Controle for Cricket in India.
 
 For demo [click here](https://bcci-webpage.herokuapp.com/)
 ## Author
-Sambhu patra sambhu793@gmail.com 
+Sambhu Patra sambhu793@gmail.com 
