@@ -299,16 +299,16 @@ html {
 .lastsection {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
   width: 90vw;
-  height: 270vh;
+  height: 180vh;
   position: relative;
   top: 5.8rem;
-}
+  padding-left: 5vw;}
 
 .about {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(21, 3, 56) 100%);
   box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.4);
   width: 70vw;
-  height: 257vh;
+  height: 165vh;
   position: relative;
   top: 5rem;
   left: 10vw;
@@ -316,7 +316,7 @@ html {
 
 .about p {
   color: whitesmoke;
-  font-size: 2.2vw;
+  font-size: 2.vw;
   position: absolute;
   top: 8rem;
   left: 1vw;
@@ -781,5 +781,13 @@ p {
 @media (min-width:781px) and (max-width:1000px) {
   html {
     font-size: 52%;
+  }
+
+  .lastsection {
+    height: 160vh;   
+  }
+
+  .about {
+    height: 148vh;
   }
 }
