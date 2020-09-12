@@ -72,7 +72,7 @@ html {
   background: rgb(61, 10, 129);
 }
 
-.logosec {
+.main__logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -178,7 +178,7 @@ html {
   width: 90vw;
   position: relative;
   top: 7rem;
-  padding-left: 8.5vw;
+  margin: 0px auto;
 }
 
 .gallery { 
@@ -198,7 +198,7 @@ html {
 }
 
 .name {
-  font-size: 3vw;
+  font-size: 3rem;
   font-style: italic;
   color: #fff;
   text-shadow: .2rem .2rem .4rem #000000;
@@ -207,12 +207,13 @@ html {
 }
 
 .title {
-  font-size: 3vw;
+  font-size: 3rem;
   color: rgb(243, 108, 19);
   text-shadow: .2rem .2rem .4rem #000000;
   font-style: italic;
   position: relative;
   left: 2vw;
+  top: -1px;
 }
 
 .gallery a {
@@ -227,17 +228,17 @@ html {
   width: 25%;
   position: relative;
   top: -2rem;
-  left: 1rem;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgba(9,9,121,1) 85%, rgb(241, 154, 23) 100%);
+  margin: 5px auto;
+  background: linear-gradient(90deg, rgb(8, 3, 66) 100%, rgba(9,9,121,1) 100%, rgb(241, 154, 23) 100%);
 }
 
 /* ======================================
     intro section
 ====================================== */
 
-.headdiv {
+.head {
   width: 100%;
-  height: 30vh;
+  height: 140px;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,0.6);
   background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 35%, rgba(200,212,255,1) 200%);
 }
@@ -263,13 +264,13 @@ html {
   right: 0;
 }
 
-.introsec {
+.intro {
   width: 80vw;
   height: auto;
   background-color: rgb(235, 245, 245);
-  position: absolute;
-  top: 20rem;
-  left: 10vw;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
   box-shadow: .7rem .7rem .7rem .7rem rgba(0,0,0,0.6);
 }
 
@@ -286,8 +287,9 @@ html {
 .paragraph p {
   position: relative;
   top: .2rem;
-  font-size: 2rem;
+  font-size: 3.2rem;
   margin: 3rem;
+  padding: 5px;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -296,51 +298,39 @@ html {
       about section
 ======================================== */
 
-.lastsection {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
-  width: 90vw;
-  height: 180vh;
-  position: relative;
-  top: 5.8rem;
-  padding-left: 5vw;}
-
 .about {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(21, 3, 56) 100%);
-  box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.4);
-  width: 70vw;
-  height: 165vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(9, 57, 119) 100%);
+  width: 90vw;
+  height: auto;
+  margin: 0px auto;
   position: relative;
   top: 5rem;
-  left: 10vw;
+  padding: 7px;
+  box-shadow: .4rem .4rem .7rem .2rem rgba(0,0,0,0.6);
 }
 
-.about p {
-  color: whitesmoke;
-  font-size: 2.vw;
-  position: absolute;
-  top: 8rem;
-  left: 1vw;
-  margin: 2rem;
+.about__history {
+  color: antiquewhite;
+  font-size: 3rem;
   font-family: 'Play', sans-serif;
-  letter-spacing: 2px;
+  margin: 2rem;
+  padding: 3px;
+  box-sizing: border-box;
 }
 
 .about h1 {
-  color: whitesmoke;
-  font-size: 2vw;
-  position: absolute;
-  top: 3rem;
-  left: 5vw;
-  border: 2px solid #f5d6b3;
-  border-radius: 40px;
-  padding: 12px;
+  color: aliceblue;
+  font-size: 4rem;
+  position: relative;
+  padding: 10px;
+  text-shadow: .2rem .5rem .4rem #0f44f1a1;
 }
 
 /* ==============================
       footer section
 ============================== */
 
-.footersec img {
+.footer__sec img {
   width: 5.4vw;
   height: 5.4vw;
   position: absolute;
@@ -397,23 +387,24 @@ p {
 ========================================== */
 
 @media (max-width:150px) {
+  
   html {
     font-size: 20%;
   }
 
-  .logosec{
+  .main__logo {
     display: block;
   }
 
   .logo img {
     position: absolute;
     top: 1rem;
-    left: 15.0rem;
+    left: 12.0rem;
   }
   .logo h2 {
     font-size: 2.5rem;
     top: 3rem;
-    left: 23.0rem;
+    left: 20.0rem;
   }
 
   .navbar {
@@ -429,28 +420,20 @@ p {
   }
 
   .container {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    border: 0;
     width: 100%;
-    position: relative;
-    left: -5vw;
   }
 
   .name {
-    position: relative;
-    top: -15vw;
-    font-size: 7.8vw;
+    font-size: 4rem;
+    left: 0;
   }
   
   .title {
-    font-size: 7.8vw;
-    top: -15vw;
+    font-size: 4rem;
     left: 0
   }
 
-  .footersec img {
+  .footer__sec img {
     position: absolute;
     top: 145rem; 
     left: 48.6vw;
@@ -504,32 +487,29 @@ p {
     text-shadow: .2rem .2rem .4rem #000000;
     letter-spacing: 3px;
   }
-
-  .lastsection {
-    height: 130vh;
-  }
-
-  .about {
-    height: 100vh;
-    position: relative;
-    left: 10vw;
-  }
+  
   .about h1 {
-    padding: 3px;
-    font-size: 4vw;
-  }
-
-  .about p {
-    font-size: 2.9vw;
+    color: aliceblue;
+    font-size: 5.5vw;
+    position: relative;
+    padding: 8px;
+    text-shadow: .2rem .5rem .4rem #0f44f1a1;
   }
 
   .headline h1 {
     font-size: 4vw;
   }
 
-  .introsec {
-    position: absolute;
-    left: 5px;
+  .head {
+    height: 30px;
+  }
+
+  .paragraph p {
+    padding: 5px;
+  }
+
+  .about h1 {
+    font-size: 4.5rem;
   }
 }
 
@@ -538,6 +518,7 @@ p {
 ========================================== */
 
 @media (min-width:151px) and (max-width:320px) {
+  
   html {
     font-size: 20%;
   }
@@ -548,8 +529,6 @@ p {
 
   .container {
     width: 100%;
-    position: relative;
-    left: -3vw;
   }
 
   .name {
@@ -566,7 +545,7 @@ p {
     font-size: 3.4vw;
   }
 
-  .footersec img {
+  .footer__sec img {
     top: 162rem; 
     left: 48.6vw;
   }
@@ -595,24 +574,31 @@ p {
     font-size: 2vw;
   }
 
-  .about {
-    height: 133.5vh;
+  .about__history {
+    font-size: 4rem;
+    }
+  
+  .about h1 {
+    font-size: 5.5vw;
     position: relative;
-    left: 10vw;
+    padding-left: 18px;
   }
 
-  .lastsection {
-    height: 140vh;
+  .head {
+    height: 30px;
+  }
+
+  .headline h1 {
+    font-size: 4vw;
+  }
+
+  .paragraph p {
+    padding: 5px;
+    font-size: 4vw;
   }
 
   .about h1 {
-    font-size: 3vw;
-    border-radius: 2px;
-    padding: 3px;
-}
-
-  .about p {
-    font-size: 2.9vw;
+    font-size: 4.5rem;
   }
 }
 
@@ -644,33 +630,11 @@ p {
     font-size: 5.5vw;
   }
 
-  .lastsection {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
-    width: 90vw;
-    height: 186vh;
-    position: relative;
-    top: 5.8rem;
-    left: 3vw;
-  }
-
-  .about {
-    height: 178.5vh;
-    position: relative;
-    left: 10vw;
-  }
-
   .about h1 {
-    position: absolute;
-    top: 1.5rem;
-    border-radius: 40px;
-    padding: 5px;
+    font-size: 4.5rem;
   }
 
-  .about p {
-    font-size: 2.9vw;
-  }
-
-  .footersec img {
+  .footer__sec img {
     top: 135rem; 
     left: 48.6vw;
   }
@@ -702,6 +666,19 @@ p {
   p {
     font-size: 2.4rem;
   }
+
+  .head {
+    height: 50px;
+  }
+
+  .headline h1 {
+    font-size: 4vw;
+  }
+
+  .paragraph p {
+    padding: 5px;
+    font-size: 4vw;
+  }
 }
 
 /* ==========================================
@@ -709,6 +686,7 @@ p {
 ========================================== */
 
 @media (min-width:481px) and (max-width:780px) {
+  
   html {
     font-size: 40%;
   }
@@ -723,30 +701,6 @@ p {
 
   .title {
     font-size: 5.5vw;
-  }
-
-  .lastsection {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 70%);
-    width: 90vw;
-    height: 264.6vh;
-    position: relative;
-    top: 5.8rem;
-    left: 3vw;
-  }
-
-  .about {
-    height: 258.5vh;
-    position: relative;
-    left: 10vw;
-  }
-
-  .about p {
-    font-size: 2.9vw;
-  }
-
-  .about h1 {
-    position: absolute;
-    top: 1.5rem;
   }
 
   .caption {
@@ -772,6 +726,23 @@ p {
     top: 140.6rem;
     font-size: 1vw;
   }
+
+  .head {
+    height: 50px;
+  }
+
+  .headline h1 {
+    font-size: 3.4vw;
+  }
+
+  .paragraph p {
+    padding: 5px;
+    font-size: 4vw;
+  }
+
+  .about h1 {
+    font-size: 4.5rem;
+  }
 }
 
 /* ==========================================
@@ -779,15 +750,25 @@ p {
 ========================================== */
 
 @media (min-width:781px) and (max-width:1000px) {
+  
   html {
     font-size: 52%;
   }
 
-  .lastsection {
-    height: 160vh;   
+  .head {
+    height: 70px;
   }
 
-  .about {
-    height: 148vh;
+  .headline h1 {
+    font-size: 3.4vw;
+  }
+
+  .paragraph p {
+    padding: 5px;
+    font-size: 4vw;
+  }
+
+  .about h1 {
+    font-size: 4.5rem;
   }
 }
