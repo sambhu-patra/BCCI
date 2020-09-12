@@ -1,5 +1,5 @@
 ## BCCI 
-Wbesite of Board of Controle for Cricket in India.
+Website of Board of Control for Cricket in India.
 ## Built With
 - HTML
 - CSS
