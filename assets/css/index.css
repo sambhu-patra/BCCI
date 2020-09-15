@@ -352,7 +352,7 @@ html {
   color: #ee9714;
 }
 
-.left {
+.copyright {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -432,7 +432,7 @@ html {
     font-size: 2.5rem;
   }
 
-  .left {
+  .copyright {
     font-size: 2rem;
   }
 
@@ -515,7 +515,7 @@ html {
     font-size: 3rem;
   }
 
-  .left {
+  .copyright{
     font-size: 2rem;
   }
   
@@ -603,7 +603,7 @@ html {
     font-size: 2rem;
   }
   
-  .left {
+  .copyright {
     font-size: 2rem;
   }
   
@@ -682,7 +682,7 @@ html {
     margin-bottom: 2rem;
   }
   
-  .left {
+  .copyright {
     font-size: 2rem;
   }
   
